@@ -14,5 +14,6 @@ steps:
       - git config --global user.name "me"
       - git config --global user.email "me@gmail.com"
       - git config --global color.ui false
-      - mkdir kernel && cd kernel
+      - git clone https://github.com/FutureDrones/kernel kernel/
+      - cd kernel
       - bash build.sh
