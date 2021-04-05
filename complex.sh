@@ -38,6 +38,12 @@ elif [[ $1 = lancelot-micode ]]; then
     AKBRANCH=lancelot
     KNAME=Dream
     ZIPNAME="Dream-lancelot-TwentySeven-BETA"
+elif [[ $1 = merlin-micode ]]; then 
+    SAUCE="-b ten-micode https://github.com/JamieHoSzeYui/dream"
+    DEFCONFIG=merlin_defconfig
+    AKBRANCH=lancelot
+    KNAME=Dream
+    ZIPNAME="Dream-merlin-TwentySeven-BETA"
 elif [[ $1 = lancelot-oc ]]; then 
     SAUCE="https://github.com/JamieHoSzeYui/dream -b ten-oc" 
     DEFCONFIG=lancelot_defconfig
@@ -110,7 +116,7 @@ make O=out ARCH=arm64 $DEFCONFIG
 
 # Compile plox
 compile() {
-    make -j8 O=out \
+    make -j48 O=out \
                     ARCH=arm64 \
                     CC=clang \
                     CLANG_TRIPLE=aarch64-linux-gnu- \
