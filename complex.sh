@@ -83,7 +83,6 @@ sudo apt-get purge python3* -y
 sudo apt-get remove --auto-remove python3* -y
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1 #Python2 supremacy
 python -V 
-exit
 
 echo "Cloning dependencies"
 git clone --depth=1 --single-branch $SAUCE build 
