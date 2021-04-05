@@ -76,7 +76,7 @@ fi
 # Setup
 echo "Setting up.."
 sudo apt-get -y update 
-sudo apt-get install bc cpio build-essential zip curl libstdc++6 git wget python gcc clang libssl-dev repo rsync flex bison -y
+sudo apt-get install bc cpio build-essential zip curl libstdc++6 git wget python gcc clang libssl-dev rsync flex bison -y
 git config --global user.name "JamieHoSzeYui"
 git config --global user.email "wileylau@gmail.com"
 git config --global color.ui false
@@ -144,7 +144,7 @@ function start() {
         -d chat_id="$chat_id" \
         -d "disable_web_page_preview=true" \
         -d "parse_mode=html" \
-        -d text="<b>• $KNAME •</b>%0ABuild started on <code>Travis CI</code>%0A <b>For device</b> <i>$DEVICE</i>%0A<b>branch:-</b> <code>$(git rev-parse --abbrev-ref HEAD)</code>(master)%0A<b>Under commit</b> <code>$(git log --pretty=format:'"%h : %s"' -1)</code>%0A<b>Using compiler:- </b> <code>Clang 5484270</code>%0A<b>Started on:- </b> <code>$(date)</code>%0A<b>Build Status:</b> #$STATUS"
+        -d text="<b>• $KNAME •</b>%0ABuild started on <code>Drone CI</code>%0A <b>For device</b> <i>$DEVICE</i>%0A<b>branch:-</b> <code>$(git rev-parse --abbrev-ref HEAD)</code>(master)%0A<b>Under commit</b> <code>$(git log --pretty=format:'"%h : %s"' -1)</code>%0A<b>Using compiler:- </b> <code>Clang 5484270</code>%0A<b>Started on:- </b> <code>$(date)</code>%0A<b>Build Status:</b> #$STATUS"
 }
 # Push kernel to channel
 
