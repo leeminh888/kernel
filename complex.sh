@@ -74,6 +74,12 @@ elif [[ $1 = shiva ]]; then
     AKBRANCH=lancelot 
     KNAME=Dream
     ZIPNAME="Dream-shiva-JustTheTwoOfUs-BETA"
+elif [[ $1 = lava ]]; then 
+    SAUCE="-b ten-micode https://github.com/JamieHoSzeYui/dream"
+    DEFCONFIG=lava_defconfig
+    AKBRANCH=lancelot
+    KNAME=Dream
+    ZIPNAME="Dream-lava-TwentySeven-BETA"
 else 
     echo "What the fuck ???"
     exit 
@@ -116,7 +122,7 @@ make O=out ARCH=arm64 $DEFCONFIG
 
 # Compile plox
 compile() {
-    make -j48 O=out \
+    make -j60 O=out \
                     ARCH=arm64 \
                     CC=clang \
                     CLANG_TRIPLE=aarch64-linux-gnu- \
