@@ -81,6 +81,7 @@ git config --global user.email "wileylau@gmail.com"
 git config --global color.ui false
 sudo apt-get purge python3*
 sudo apt-get remove --auto-remove python3*
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1 #Python2 supremacy
 
 echo "Cloning dependencies"
 git clone --depth=1 --single-branch $SAUCE build 
