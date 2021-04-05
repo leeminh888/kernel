@@ -3,7 +3,7 @@ name: Drone
 
 steps:
  - name: compile
-   image: starlight2834/ci_docker:latest
+   image: apon77/aosp:latest
    environment:
      token:
        from_secret: token
