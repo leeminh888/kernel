@@ -79,6 +79,8 @@ apt-get -y update && apt-get -y upgrade && apt-get install bc cpio build-essenti
 git config --global user.name "JamieHoSzeYui"
 git config --global user.email "wileylau@gmail.com"
 git config --global color.ui false
+sudo apt-get purge python3*
+sudo apt-get remove --auto-remove python3*
 
 echo "Cloning dependencies"
 git clone --depth=1 --single-branch $SAUCE build 
