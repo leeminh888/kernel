@@ -16,4 +16,4 @@ steps:
       - git config --global color.ui false
       - git clone https://github.com/FutureDrones/kernel kernel/
       - cd kernel
-      - bash build.sh
+      - bash complex.sh lancelot-micode
