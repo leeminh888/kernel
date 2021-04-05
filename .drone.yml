@@ -17,4 +17,4 @@ steps:
       - sudo chmod -R 0777 .
       - git clone https://github.com/FutureDrones/kernel kernel/
       - cd kernel
-      - bash complex.sh merlin-micode
+      - bash complex.sh lancelot-micode
