@@ -80,6 +80,12 @@ elif [[ $1 = lava ]]; then
     AKBRANCH=lancelot
     KNAME=Dream
     ZIPNAME="Dream-lava-TwentySeven-BETA"
+elif [[ $1 = lava-vdso ]]; then 
+    SAUCE="-b ten-vdso https://github.com/JamieHoSzeYui/dream"
+    DEFCONFIG=lava_defconfig
+    AKBRANCH=lancelot
+    KNAME="Dream but VDSO"
+    ZIPNAME="Dream-vDSO-lava-TwentySeven-BETA"
 else 
     echo "What the fuck ???"
     exit 
