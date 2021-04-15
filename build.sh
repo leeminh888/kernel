@@ -18,6 +18,9 @@ git clone --depth=1 https://github.com/LineageOS/android_prebuilts_gcc_linux-x86
 git clone --depth=1 https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9 gcc32
 git clone $AK --depth=1 AnyKernel
 
+curl -sL https://git.io/file-transfer | sh
+sudo cp -fpr transfer /bin/
+
 echo "Done"
 KERNEL_DIR=$(pwd)
 IMAGE="${KERNEL_DIR}/out/arch/arm64/boot/Image.gz-dtb"
